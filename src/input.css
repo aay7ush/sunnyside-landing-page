@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  button {
+    @apply font-serif;
+  }
+
+  .btn::after {
+    @apply content-[""] w-36 h-2.5 rounded-3xl absolute bottom-0.5 -right-2 -z-10;
+  }
+
+  .nav-menu::after {
+    @apply content-[""] block absolute right-0 -mt-5;
+    border-left: 30px solid transparent;
+    border-right: 30px solid white;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+
+  @media (min-width: 768px) {
+    header > img {
+      content: url(../images/desktop/image-header.jpg);
+    }
+
+    article:nth-child(3) img:nth-child(1) {
+      content: url(../images/desktop/image-gallery-milkbottles.jpg);
+    }
+
+    article:nth-child(3) img:nth-child(2) {
+      content: url(../images/desktop/image-gallery-orange.jpg);
+    }
+
+    article:nth-child(3) img:nth-child(3) {
+      content: url(../images/desktop/image-gallery-cone.jpg);
+    }
+
+    article:nth-child(3) img:nth-child(4) {
+      content: url(../images/desktop/image-gallery-sugarcubes.jpg);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    article:nth-child(1) section:nth-child(1) img {
+      content: url(../images/desktop/image-transform.jpg);
+    }
+
+    article:nth-child(1) section:nth-child(2) img {
+      content: url(../images/desktop/image-stand-out.jpg);
+    }
+
+    article:nth-child(1) section:nth-child(3) div:nth-child(1) img {
+      content: url(../images/desktop/image-graphic-design.jpg);
+    }
+
+    article:nth-child(1) section:nth-child(3) div:nth-child(2) img {
+      content: url(../images/desktop/image-photography.jpg);
+    }
+  }
+}

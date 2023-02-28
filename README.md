@@ -8,7 +8,7 @@ Building realistic projects to improve my front-end skills.
 
 ### Links
 
-- Live Site URL: [Sunnyside agency landing page](https://result-summary-c0mponent.netlify.app/)
+- Live Site URL: [Sunnyside agency landing page](https://sunnyside-land1ng-page.netlify.app/)
 
 ## Built with
 
